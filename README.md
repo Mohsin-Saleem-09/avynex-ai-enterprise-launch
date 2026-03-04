@@ -190,3 +190,4 @@ For issues:
 - Check environment variables: `echo $GEMINI_API_KEY`
 - Verify pip packages: `pip list | grep -E "streamlit|easyocr|transformers"`
 - Check Streamlit logs: `streamlit run app.py --logger.level=debug`
+# OCR-repo
