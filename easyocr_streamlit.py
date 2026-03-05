@@ -207,9 +207,9 @@ Refined Text:
 
 
 def main():
-    st.set_page_config(page_title="EasyOCR + Gemini Refinement", layout="wide")
-    st.title("🔍 EasyOCR + ✨ Gemini Text Refinement")
-    st.markdown("Extract text with OCR, refine with Gemini 2.5-flash")
+    st.set_page_config(page_title="EasyOCR Refinement", layout="wide")
+    st.title("EasyOCR Text Refinement")
+    st.markdown("Extract text with OCR")
 
     with st.sidebar:
         st.header("⚙️ Settings")
