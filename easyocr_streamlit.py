@@ -219,7 +219,7 @@ def main():
             default=["en"],
         )
         use_gpu = st.checkbox("Use GPU (requires CUDA)", value=False)
-        use_gemini = st.checkbox("✨ Refine with Gemini 2.5-flash", value=True)
+        use_gemini = st.checkbox("✨ Refine", value=True)
         
         st.markdown("---")
         st.subheader("🎯 Confidence Threshold")
@@ -260,7 +260,7 @@ def main():
 
     st.image(img, caption="Uploaded image", use_column_width=True)
 
-    if st.button("🚀 Run OCR" + (" + Gemini" if use_gemini else "")):
+    if st.button("🚀 Run OCR" + ("" if use_gemini else "")):
         with st.spinner("🔍 Running EasyOCR..."):
             results = run_easyocr_on_image(tmp_path, langs, use_gpu)
 
