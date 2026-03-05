@@ -211,31 +211,6 @@ def main():
     st.title("🔍 EasyOCR + ✨ Gemini Text Refinement")
     st.markdown("Extract text with OCR, refine with Gemini 2.5-flash")
 
-
-    if uploaded_file is None:
-        st.info("📤 Please upload an image to begin.")
-        return
-
-    # Save uploaded file to a temp path for easyocr
-    img = Image.open(uploaded_file).convert("RGB")
-    buf = io.BytesIO()
-    img.save(buf, format="PNG")
-    buf.seek(0)
-
-    tmp_path = "/tmp/easyocr_streamlit_upload.png"
-    with open(tmp_path, "wb") as f:
-        f.write(buf.read())
-
-    st.image(img, caption="Uploaded image", use_column_width=True)
-
-    if st.button("🚀 Run OCR" + (" + Gemini" if use_gemini else "")):
-        with st.spinner("🔍 Running EasyOCR..."):
-            results = run_easyocr_on_image(tmp_path, langs, use_gpu)
-
-        if not results:
-            st.warning("⚠️ No detections returned.")
-            return
-
     with st.sidebar:
         st.header("⚙️ Settings")
         langs = st.multiselect(
@@ -269,29 +244,29 @@ def main():
         #     "**Notes:**\n- OCR runs only when you click the button\n- GPU must be configured for EasyOCR to use it\n- Gemini API key from `GEMINI_API_KEY` environment variable"
         # )
 
-    # if uploaded_file is None:
-    #     st.info("📤 Please upload an image to begin.")
-    #     return
+    if uploaded_file is None:
+        st.info("📤 Please upload an image to begin.")
+        return
 
-    # # Save uploaded file to a temp path for easyocr
-    # img = Image.open(uploaded_file).convert("RGB")
-    # buf = io.BytesIO()
-    # img.save(buf, format="PNG")
-    # buf.seek(0)
+    # Save uploaded file to a temp path for easyocr
+    img = Image.open(uploaded_file).convert("RGB")
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    buf.seek(0)
 
-    # tmp_path = "/tmp/easyocr_streamlit_upload.png"
-    # with open(tmp_path, "wb") as f:
-    #     f.write(buf.read())
+    tmp_path = "/tmp/easyocr_streamlit_upload.png"
+    with open(tmp_path, "wb") as f:
+        f.write(buf.read())
 
-    # st.image(img, caption="Uploaded image", use_column_width=True)
+    st.image(img, caption="Uploaded image", use_column_width=True)
 
-    # if st.button("🚀 Run OCR" + (" + Gemini" if use_gemini else "")):
-    #     with st.spinner("🔍 Running EasyOCR..."):
-    #         results = run_easyocr_on_image(tmp_path, langs, use_gpu)
+    if st.button("🚀 Run OCR" + (" + Gemini" if use_gemini else "")):
+        with st.spinner("🔍 Running EasyOCR..."):
+            results = run_easyocr_on_image(tmp_path, langs, use_gpu)
 
-    #     if not results:
-    #         st.warning("⚠️ No detections returned.")
-    #         return
+        if not results:
+            st.warning("⚠️ No detections returned.")
+            return
 
         # Filter by confidence threshold
         filtered_results = filter_results_by_confidence(results, confidence_threshold)
