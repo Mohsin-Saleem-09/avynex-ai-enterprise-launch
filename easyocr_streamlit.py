@@ -292,10 +292,10 @@ def main():
         # Gemini refinement
         refined_text = None
         if use_gemini:
-            with st.spinner("✨ Refining text with Gemini 2.5-flash..."):
+            with st.spinner("✨ Refining text"):
                 success, refined_text = call_gemini_for_refinement(ocr_text_clean)
                 if success:
-                    st.success("✅ Gemini refinement complete!")
+                    st.success("✅ Refinement complete!")
                 else:
                     st.error(refined_text)
                     refined_text = None
