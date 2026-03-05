@@ -1,19 +1,3 @@
-"""
-Streamlit frontend for EasyOCR + Gemini text refinement.
-
-Features:
-- Upload image (jpg/png/jpeg/webp)
-- Pick EasyOCR languages
-- Toggle GPU usage
-- Run OCR on button click (does not auto-run on upload)
-- Draw bounding boxes and show extracted text
-- Send extracted text to Gemini 2.5-flash for refinement
-- Display original and refined text side-by-side
-- Download annotated image, original text, and refined text
-
-Requires: streamlit, easyocr, pillow, opencv-python, numpy, google-generativeai, requests
-"""
-
 import io
 import os
 import json
@@ -251,14 +235,14 @@ def main():
         
         if use_gemini:
             st.markdown("---")
-            st.info("Gemini will refine OCR text for:\n- Grammar correction\n- OCR error fixing\n- Format improvement\n- NAB application content")
+            # st.info("Gemini will refine OCR text for:\n- Grammar correction\n- OCR error fixing\n- Format improvement\n- NAB application content")
         
         st.markdown("---")
         uploaded_file = st.file_uploader("Upload image", type=["jpg", "jpeg", "png", "webp"])
         st.markdown("---")
-        st.markdown(
-            "**Notes:**\n- OCR runs only when you click the button\n- GPU must be configured for EasyOCR to use it\n- Gemini API key from `GEMINI_API_KEY` environment variable"
-        )
+        # st.markdown(
+        #     "**Notes:**\n- OCR runs only when you click the button\n- GPU must be configured for EasyOCR to use it\n- Gemini API key from `GEMINI_API_KEY` environment variable"
+        # )
 
     if uploaded_file is None:
         st.info("📤 Please upload an image to begin.")
