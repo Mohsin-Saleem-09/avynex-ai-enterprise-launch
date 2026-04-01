@@ -7,7 +7,7 @@ import WhySection from "@/components/sections/WhySection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import PricingSection from "@/components/sections/PricingSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
+
 import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 
