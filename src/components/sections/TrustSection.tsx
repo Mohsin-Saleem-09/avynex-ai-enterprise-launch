@@ -12,11 +12,11 @@ const TrustSection = () => (
         className="text-center mb-12"
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Built for <span className="text-primary">real businesses</span>
+          Built for <span className="text-primary">real business operations</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          We don't build demos — we ship production-grade AI systems that
-          handle thousands of interactions daily across multiple industries.
+          We don't build demos — we ship production-grade AI systems that handle
+          thousands of interactions monthly across multiple industries.
         </p>
       </motion.div>
 

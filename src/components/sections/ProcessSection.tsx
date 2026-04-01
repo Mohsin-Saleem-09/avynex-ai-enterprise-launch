@@ -12,7 +12,7 @@ const ProcessSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Our Process</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Effortless integration in <span className="text-primary">3 simple steps</span>
+          Simple, fast, and <span className="text-primary">effective implementation</span>
         </h2>
       </motion.div>
 

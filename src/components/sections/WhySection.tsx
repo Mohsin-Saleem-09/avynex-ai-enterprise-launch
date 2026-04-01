@@ -16,8 +16,9 @@ const WhySection = () => (
           A premium AI partner for <span className="text-primary">serious businesses</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          This is not a generic chatbot agency. Avynex AI engineers production-ready
-          business systems — architected for reliability, scale, and real-world impact.
+          This is not a basic chatbot agency or freelance service. Avynex AI builds
+          real production-level systems designed for business operations — reliable,
+          scalable, and built to deliver measurable results.
         </p>
       </motion.div>
 

@@ -3,7 +3,6 @@ import {
   MessageSquare,
   HeartPulse,
   Cog,
-  Globe,
   Zap,
   Shield,
   Clock,
@@ -32,50 +31,42 @@ export const services = [
     icon: Phone,
     title: "AI Voice Agents",
     description:
-      "Production-ready voice assistants that handle inbound and outbound calls, qualify leads, book appointments, and deliver human-like conversations at scale.",
+      "Never miss a call. Automatically answer, book appointments, and handle customer inquiries 24/7 — without hiring extra staff.",
   },
   {
     icon: MessageSquare,
-    title: "Conversational AI Systems",
+    title: "Conversational AI",
     description:
-      "Intelligent chatbots and messaging agents trained on your business data — deployed across web, WhatsApp, and internal workflows.",
+      "Respond instantly on website and WhatsApp, improving response time and customer experience while reducing manual workload.",
   },
   {
     icon: HeartPulse,
     title: "Healthcare AI",
     description:
-      "HIPAA-conscious AI systems for patient intake, symptom triage, appointment scheduling, and clinical decision support.",
+      "Automate patient interactions, appointment booking, and follow-ups for clinics and hospitals — reducing wait times and no-shows.",
   },
   {
     icon: Cog,
-    title: "Automation & Integrations",
+    title: "Automation Systems",
     description:
-      "End-to-end workflow automation connecting your CRM, calendar, EHR, and business tools into one intelligent operating layer.",
+      "Connect your workflows, CRM, scheduling, and operations into one intelligent system that runs without constant oversight.",
   },
-];
-
-export const integrationNodes = [
-  { label: "Website", x: 10, y: 20 },
-  { label: "WhatsApp", x: 80, y: 15 },
-  { label: "CRM", x: 85, y: 70 },
-  { label: "Calendar", x: 12, y: 75 },
-  { label: "Workflows", x: 50, y: 90 },
 ];
 
 export const whyFeatures = [
   { icon: Clock, title: "Real-time Performance", description: "Sub-second response times across all channels" },
   { icon: Languages, title: "Multilingual Support", description: "12+ languages with native-quality output" },
-  { icon: Server, title: "Production Engineering", description: "FastAPI backends, cloud-ready infrastructure" },
+  { icon: Server, title: "Production-grade Systems", description: "Enterprise-ready infrastructure, not experiments" },
   { icon: CheckCircle, title: "Reliable Delivery", description: "Tested, documented, deployed on schedule" },
 ];
 
 export const whyBullets = [
-  "Voice, chat, WhatsApp, and web assistants",
-  "Domain-specific RAG systems",
-  "Multilingual AI systems",
-  "FastAPI / Flask production backends",
-  "Booking and scheduling flows",
-  "Scalable cloud-ready deployment",
+  "Voice, chat, and WhatsApp AI systems",
+  "Multilingual automation for global reach",
+  "Business-focused solutions, not experimental tools",
+  "Reliable, scalable architecture built to last",
+  "Smart booking and scheduling flows",
+  "Production-ready cloud deployment",
 ];
 
 export const processSteps = [
@@ -83,50 +74,50 @@ export const processSteps = [
     step: "01",
     title: "Discovery & Strategy",
     description:
-      "We map your workflows, identify automation opportunities, and define the AI architecture that fits your business goals.",
+      "We understand your business, map your workflows, and define the AI use cases that will deliver the highest impact.",
   },
   {
     step: "02",
     title: "Build & Integrate",
     description:
-      "Our team develops, trains, and integrates your AI systems with your existing tools — CRM, calendar, EHR, and more.",
+      "Our team develops and connects AI into your existing workflows — CRM, calendar, phone systems, and more.",
   },
   {
     step: "03",
     title: "Launch & Scale",
     description:
-      "We deploy to production, monitor performance, and continuously optimize as your usage and business grow.",
+      "We deploy to production, monitor performance, and continuously improve as your business grows.",
   },
 ];
 
 export const projects = [
   {
     category: "Voice AI",
-    title: "Real-Time AI Calling Agent",
+    title: "AI Calling Agent",
     description:
-      "Automated outbound calling system handling lead qualification, appointment booking, and follow-ups with natural conversation flow.",
+      "Handles customer calls and bookings automatically — qualifying leads, scheduling appointments, and following up without human intervention.",
     tags: ["Twilio", "OpenAI", "FastAPI", "WebSocket"],
   },
   {
     category: "Healthcare AI",
-    title: "Healthcare Conversational Avatar",
+    title: "Healthcare AI Assistant",
     description:
-      "Interactive AI avatar for patient engagement — handles symptom intake, FAQ resolution, and provider routing in real time.",
+      "Patient interaction and appointment system that handles intake, answers FAQs, and routes patients to the right provider in real time.",
     tags: ["LangChain", "React", "FHIR", "GPT-4"],
   },
   {
     category: "Voice AI",
     title: "Multilingual Voice Bot",
     description:
-      "Voice-first AI assistant supporting 8+ languages for a global hospitality chain — handles reservations, inquiries, and upselling.",
+      "Handles multiple languages seamlessly for a global hospitality chain — managing reservations, inquiries, and upselling across regions.",
     tags: ["Deepgram", "ElevenLabs", "Python", "Redis"],
   },
   {
-    category: "Computer Vision",
-    title: "Medical Image Diagnosis System",
+    category: "Automation",
+    title: "Business Automation System",
     description:
-      "AI-powered diagnostic tool analyzing medical imagery for early detection, integrated into clinical workflows with DICOM support.",
-    tags: ["PyTorch", "DICOM", "Flask", "AWS"],
+      "End-to-end workflow automation connecting CRM, scheduling, and operations into one intelligent system that runs on autopilot.",
+    tags: ["n8n", "PostgreSQL", "Flask", "AWS"],
   },
 ];
 
@@ -135,7 +126,7 @@ export const pricingPlans = [
     name: "Starter",
     price: "$399",
     period: "/month",
-    description: "For businesses getting started with AI automation.",
+    description: "Best for small businesses starting with automation.",
     features: [
       "Voice & WhatsApp AI assistant",
       "Website knowledge training",
@@ -149,7 +140,7 @@ export const pricingPlans = [
     name: "Growth",
     price: "$599",
     period: "/month",
-    description: "For scaling teams that need deeper integrations.",
+    description: "Best for growing companies needing integrations and scaling.",
     features: [
       "Multi-source trained AI",
       "Up to 4,000 conversations",
@@ -163,7 +154,7 @@ export const pricingPlans = [
     name: "Enterprise",
     price: "Custom",
     period: "",
-    description: "For organizations with complex, multi-team needs.",
+    description: "For large businesses with advanced needs.",
     features: [
       "Custom AI architecture",
       "Deep workflow automation",
@@ -181,21 +172,21 @@ export const testimonials = [
     role: "Chief Medical Officer, MedVista Clinics",
     initials: "SA",
     quote:
-      "Avynex AI transformed our patient intake process. Call volumes dropped 40% while satisfaction scores went up. The system handles Urdu and English seamlessly.",
+      "Since implementing Avynex AI, our front desk handles 40% fewer calls while patient satisfaction has actually gone up. The system manages Urdu and English seamlessly — it's been a game changer for our operations.",
   },
   {
     name: "Rahul Kapoor",
     role: "Operations Director, TasteHub Restaurants",
     initials: "RK",
     quote:
-      "Our reservation system runs on autopilot now. The voice agent handles 200+ calls daily, and the WhatsApp bot manages orders without a single missed message.",
+      "Our reservation system runs on autopilot now. The voice agent handles 200+ calls daily and the WhatsApp bot manages orders without a single missed message. We saved two full-time hires.",
   },
   {
     name: "Fatima Zaidi",
     role: "CEO, ScalePoint Solutions",
     initials: "FZ",
     quote:
-      "Working with Avynex felt like having an in-house AI team. They delivered a production-grade system on time, with documentation and support that enterprise clients expect.",
+      "Avynex delivered a production-grade system on time, with proper documentation and support. It felt like working with an in-house AI team, not an outside vendor. Our clients have noticed the difference.",
   },
 ];
 

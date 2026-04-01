@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
 const TestimonialsSection = () => (
-  <section className="section-padding">
+  <section className="section-padding bg-muted/40">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ const TestimonialsSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Testimonials</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Trusted by <span className="text-primary">industry leaders</span>
+          What our <span className="text-primary">clients say</span>
         </h2>
       </motion.div>
 
