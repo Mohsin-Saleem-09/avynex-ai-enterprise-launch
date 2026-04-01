@@ -12,7 +12,7 @@ const contactInfo = [
 ];
 
 const ContactSection = () => (
-  <section id="contact" className="section-padding">
+  <section id="contact" className="section-padding bg-muted/40">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -22,12 +22,11 @@ const ContactSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Get in Touch</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Let's build something <span className="text-gradient">intelligent</span>
+          Let's build something <span className="text-primary">intelligent</span>
         </h2>
       </motion.div>
 
       <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-        {/* Info */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -51,23 +50,22 @@ const ContactSection = () => (
           ))}
         </motion.div>
 
-        {/* Form */}
         <motion.form
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="glass rounded-2xl p-8 space-y-5"
+          className="bg-card border border-border rounded-2xl p-8 space-y-5 shadow-sm"
           onSubmit={(e) => e.preventDefault()}
         >
           <div className="grid sm:grid-cols-2 gap-4">
-            <Input placeholder="Full name" className="bg-muted/50 border-border" />
-            <Input type="email" placeholder="Email" className="bg-muted/50 border-border" />
+            <Input placeholder="Full name" />
+            <Input type="email" placeholder="Email" />
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
-            <Input placeholder="Phone number" className="bg-muted/50 border-border" />
-            <Input placeholder="Industry" className="bg-muted/50 border-border" />
+            <Input placeholder="Phone number" />
+            <Input placeholder="Industry" />
           </div>
-          <Textarea placeholder="Tell us about your project..." rows={5} className="bg-muted/50 border-border resize-none" />
+          <Textarea placeholder="Tell us about your project..." rows={5} className="resize-none" />
           <Button className="w-full">Send Message</Button>
         </motion.form>
       </div>

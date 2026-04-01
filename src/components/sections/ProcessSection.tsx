@@ -2,7 +2,7 @@ import { processSteps } from "@/data/siteData";
 import { motion } from "framer-motion";
 
 const ProcessSection = () => (
-  <section id="process" className="section-padding">
+  <section id="process" className="section-padding bg-muted/40">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -12,7 +12,7 @@ const ProcessSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Our Process</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Effortless integration in <span className="text-gradient">3 simple steps</span>
+          Effortless integration in <span className="text-primary">3 simple steps</span>
         </h2>
       </motion.div>
 
@@ -24,7 +24,7 @@ const ProcessSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.15 }}
-            className="glass rounded-2xl p-8 relative group hover:glow-sm transition-shadow"
+            className="bg-card border border-border rounded-2xl p-8 relative group hover:shadow-md transition-shadow"
           >
             <span className="text-5xl font-bold text-primary/10 absolute top-6 right-6 group-hover:text-primary/20 transition-colors">
               {s.step}
