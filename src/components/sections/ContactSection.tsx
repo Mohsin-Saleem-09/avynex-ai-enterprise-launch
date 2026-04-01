@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, User } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,11 +8,10 @@ const contactInfo = [
   { icon: Mail, label: "Email", value: "info@avynexai.com" },
   { icon: Phone, label: "Phone / WhatsApp", value: "+92 300 0000000" },
   { icon: MapPin, label: "Location", value: "Islamabad, Pakistan" },
-  { icon: User, label: "Founder", value: "Mohsin Sial" },
 ];
 
 const ContactSection = () => (
-  <section id="contact" className="section-padding bg-muted/40">
+  <section id="contact" className="section-padding">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -48,6 +47,9 @@ const ContactSection = () => (
               </div>
             </div>
           ))}
+          <p className="text-sm text-muted-foreground pt-2">
+            We typically respond within 24 hours.
+          </p>
         </motion.div>
 
         <motion.form
@@ -57,14 +59,9 @@ const ContactSection = () => (
           className="bg-card border border-border rounded-2xl p-8 space-y-5 shadow-sm"
           onSubmit={(e) => e.preventDefault()}
         >
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Input placeholder="Full name" />
-            <Input type="email" placeholder="Email" />
-          </div>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Input placeholder="Phone number" />
-            <Input placeholder="Industry" />
-          </div>
+          <Input placeholder="Full Name" />
+          <Input type="email" placeholder="Email" />
+          <Input placeholder="Phone" />
           <Textarea placeholder="Tell us about your project..." rows={5} className="resize-none" />
           <Button className="w-full">Send Message</Button>
         </motion.form>

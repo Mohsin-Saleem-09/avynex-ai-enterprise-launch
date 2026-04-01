@@ -3,17 +3,16 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const metrics = [
-  { label: "Total Reservations", value: "2,847", change: "+12.3%", icon: CalendarCheck },
   { label: "AI Calls Handled", value: "14,209", change: "+28.5%", icon: PhoneCall },
-  { label: "WhatsApp Messages", value: "8,432", change: "+19.1%", icon: MessageSquare },
-  { label: "Total Customers", value: "1,205", change: "+8.7%", icon: Users },
+  { label: "Reservations Booked", value: "2,847", change: "+12.3%", icon: CalendarCheck },
+  { label: "Messages Processed", value: "8,432", change: "+19.1%", icon: MessageSquare },
+  { label: "Customers Managed", value: "1,205", change: "+8.7%", icon: Users },
 ];
 
 const quickActions = ["New Campaign", "Train Agent", "View Logs"];
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center section-padding pt-28 overflow-hidden">
-    {/* Subtle background accent */}
     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
     <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -30,8 +29,8 @@ const HeroSection = () => (
           <span className="text-primary">grow your business.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-          We build AI voice agents, conversational systems, and automation
-          workflows to help businesses operate smarter and grow faster.
+          Automate customer calls, handle bookings, respond instantly, and
+          streamline operations with intelligent AI systems built for real businesses.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="gap-2">
@@ -72,7 +71,7 @@ const HeroSection = () => (
               <div key={m.label} className="bg-muted/60 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <m.icon size={18} className="text-primary" />
-                  <span className="text-xs text-green-600 font-medium">{m.change}</span>
+                  <span className="text-xs font-medium text-green-600">{m.change}</span>
                 </div>
                 <p className="text-2xl font-bold text-heading">{m.value}</p>
                 <p className="text-xs text-muted-foreground mt-1">{m.label}</p>

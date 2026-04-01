@@ -10,13 +10,13 @@ const ProjectsSection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Featured Work</p>
+        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Use Cases</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Systems we've <span className="text-primary">shipped</span>
+          Real systems, <span className="text-primary">real results</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Real projects, real impact. Here's a look at some of the intelligent systems
-          we've built for businesses across industries.
+          See how businesses use Avynex AI to automate operations,
+          improve customer experience, and scale without adding headcount.
         </p>
       </motion.div>
 
