@@ -29,7 +29,7 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="glass rounded-2xl p-8 group hover:glow-sm transition-all cursor-pointer"
+            className="bg-card rounded-2xl border border-border p-8 group hover:shadow-md transition-shadow cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
               <div className="p-3 rounded-xl bg-primary/10 text-primary">

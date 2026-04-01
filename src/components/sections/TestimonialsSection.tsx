@@ -13,7 +13,7 @@ const TestimonialsSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Testimonials</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Trusted by <span className="text-gradient">industry leaders</span>
+          Trusted by <span className="text-primary">industry leaders</span>
         </h2>
       </motion.div>
 
@@ -25,12 +25,12 @@ const TestimonialsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="glass rounded-2xl p-8"
+            className="bg-card border border-border rounded-2xl p-8"
           >
-            <Quote size={24} className="text-primary/30 mb-4" />
+            <Quote size={24} className="text-primary/20 mb-4" />
             <p className="text-sm text-foreground leading-relaxed mb-6">{t.quote}</p>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-sm font-semibold text-primary">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-sm font-semibold text-primary">
                 {t.initials}
               </div>
               <div>

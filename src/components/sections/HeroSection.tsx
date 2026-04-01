@@ -13,12 +13,10 @@ const quickActions = ["New Campaign", "Train Agent", "View Logs"];
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center section-padding pt-28 overflow-hidden">
-    {/* Background glow */}
-    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse-glow pointer-events-none" />
-    <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-[100px] animate-pulse-glow pointer-events-none" />
+    {/* Subtle background accent */}
+    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
     <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
-      {/* Left */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,12 +27,11 @@ const HeroSection = () => (
         </p>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           AI agents that talk, think, and{" "}
-          <span className="text-gradient">grow your business.</span>
+          <span className="text-primary">grow your business.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-          Avynex AI builds production-ready voice agents, conversational systems,
-          healthcare AI, and automation workflows that transform how businesses
-          operate and scale.
+          We build AI voice agents, conversational systems, and automation
+          workflows to help businesses operate smarter and grow faster.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="gap-2">
@@ -46,15 +43,13 @@ const HeroSection = () => (
         </div>
       </motion.div>
 
-      {/* Right — Dashboard Mockup */}
       <motion.div
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         className="relative"
       >
-        <div className="glass rounded-2xl p-6 glow-sm">
-          {/* Dashboard header */}
+        <div className="rounded-2xl border border-border bg-card p-6 shadow-lg">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h3 className="text-sm font-semibold text-heading">AI Operations Dashboard</h3>
@@ -72,13 +67,12 @@ const HeroSection = () => (
             </div>
           </div>
 
-          {/* Metrics Grid */}
           <div className="grid grid-cols-2 gap-4">
             {metrics.map((m) => (
-              <div key={m.label} className="bg-muted/50 rounded-xl p-4">
+              <div key={m.label} className="bg-muted/60 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <m.icon size={18} className="text-primary" />
-                  <span className="text-xs text-accent font-medium">{m.change}</span>
+                  <span className="text-xs text-green-600 font-medium">{m.change}</span>
                 </div>
                 <p className="text-2xl font-bold text-heading">{m.value}</p>
                 <p className="text-xs text-muted-foreground mt-1">{m.label}</p>
@@ -86,12 +80,11 @@ const HeroSection = () => (
             ))}
           </div>
 
-          {/* Mini chart placeholder */}
-          <div className="mt-4 bg-muted/30 rounded-xl p-4 flex items-end gap-1 h-24">
+          <div className="mt-4 bg-muted/40 rounded-xl p-4 flex items-end gap-1 h-24">
             {[40, 65, 45, 80, 55, 90, 70, 85, 60, 95, 75, 88].map((h, i) => (
               <div
                 key={i}
-                className="flex-1 rounded-t-sm bg-primary/60"
+                className="flex-1 rounded-t-sm bg-primary/30"
                 style={{ height: `${h}%` }}
               />
             ))}

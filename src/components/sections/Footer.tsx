@@ -3,10 +3,9 @@ import { footerServices, footerCompany } from "@/data/siteData";
 const Footer = () => (
   <footer className="border-t border-border py-16 px-4">
     <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-      {/* Brand */}
       <div>
         <span className="text-xl font-heading font-bold text-heading">
-          Avynex <span className="text-gradient">AI</span>
+          Avynex <span className="text-primary">AI</span>
         </span>
         <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
           Production-ready AI systems that automate operations, improve customer
@@ -14,7 +13,6 @@ const Footer = () => (
         </p>
       </div>
 
-      {/* Services */}
       <div>
         <h4 className="text-sm font-semibold mb-4 text-heading">Services</h4>
         <ul className="space-y-2">
@@ -28,7 +26,6 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Company */}
       <div>
         <h4 className="text-sm font-semibold mb-4 text-heading">Company</h4>
         <ul className="space-y-2">
@@ -42,7 +39,6 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Contact */}
       <div>
         <h4 className="text-sm font-semibold mb-4 text-heading">Contact</h4>
         <ul className="space-y-2 text-sm text-muted-foreground">

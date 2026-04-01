@@ -12,7 +12,7 @@ const ProjectsSection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Featured Work</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Systems we've <span className="text-gradient">shipped</span>
+          Systems we've <span className="text-primary">shipped</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Real projects, real impact. Here's a look at some of the intelligent systems
@@ -28,7 +28,7 @@ const ProjectsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="glass rounded-2xl p-8 group hover:glow-sm transition-shadow"
+            className="bg-card border border-border rounded-2xl p-8 group hover:shadow-md transition-shadow"
           >
             <span className="text-xs text-primary font-medium uppercase tracking-wide">{p.category}</span>
             <h3 className="text-xl font-semibold mt-2 mb-3">{p.title}</h3>
