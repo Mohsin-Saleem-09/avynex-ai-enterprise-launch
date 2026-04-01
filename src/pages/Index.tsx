@@ -4,7 +4,7 @@ import TrustSection from "@/components/sections/TrustSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import IntegrationSection from "@/components/sections/IntegrationSection";
 import WhySection from "@/components/sections/WhySection";
-import ProcessSection from "@/components/sections/ProcessSection";
+
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import PricingSection from "@/components/sections/PricingSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";

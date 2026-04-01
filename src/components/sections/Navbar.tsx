@@ -14,9 +14,6 @@ const Navbar = () => {
           <span className="text-xl font-heading font-bold text-heading">
             Avynex <span className="text-primary">AI</span>
           </span>
-          <span className="hidden sm:block text-xs text-muted-foreground border-l border-border pl-2 ml-1">
-            Voice · AI · Automation
-          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
