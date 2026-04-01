@@ -1,0 +1,78 @@
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, User } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
+const contactInfo = [
+  { icon: Mail, label: "Email", value: "info@avynexai.com" },
+  { icon: Phone, label: "Phone / WhatsApp", value: "+92 300 0000000" },
+  { icon: MapPin, label: "Location", value: "Islamabad, Pakistan" },
+  { icon: User, label: "Founder", value: "Mohsin Sial" },
+];
+
+const ContactSection = () => (
+  <section id="contact" className="section-padding">
+    <div className="container mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-14"
+      >
+        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Get in Touch</p>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          Let's build something <span className="text-gradient">intelligent</span>
+        </h2>
+      </motion.div>
+
+      <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        {/* Info */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <p className="text-muted-foreground leading-relaxed">
+            Ready to automate your business with production-grade AI?
+            Reach out and let's discuss your project.
+          </p>
+          {contactInfo.map((c) => (
+            <div key={c.label} className="flex items-center gap-4">
+              <div className="p-2.5 rounded-lg bg-primary/10">
+                <c.icon size={18} className="text-primary" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">{c.label}</p>
+                <p className="text-sm font-medium text-foreground">{c.value}</p>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Form */}
+        <motion.form
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="glass rounded-2xl p-8 space-y-5"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Input placeholder="Full name" className="bg-muted/50 border-border" />
+            <Input type="email" placeholder="Email" className="bg-muted/50 border-border" />
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Input placeholder="Phone number" className="bg-muted/50 border-border" />
+            <Input placeholder="Industry" className="bg-muted/50 border-border" />
+          </div>
+          <Textarea placeholder="Tell us about your project..." rows={5} className="bg-muted/50 border-border resize-none" />
+          <Button className="w-full">Send Message</Button>
+        </motion.form>
+      </div>
+    </div>
+  </section>
+);
+
+export default ContactSection;
