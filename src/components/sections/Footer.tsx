@@ -1,4 +1,12 @@
 import { footerServices, footerCompany } from "@/data/siteData";
+import { Instagram, Facebook, Linkedin, Twitter } from "lucide-react";
+
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/avynexai/?hl=en", icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61574692356114", icon: Facebook },
+  { label: "Twitter", href: "https://x.com/avynexai", icon: Twitter },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/113096272/admin/dashboard/", icon: Linkedin },
+];
 
 const Footer = () => (
   <footer className="border-t border-border py-16 px-4">
@@ -49,10 +57,24 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="container mx-auto mt-12 pt-6 border-t border-border">
-      <p className="text-xs text-muted-foreground text-center">
+    <div className="container mx-auto mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p className="text-xs text-muted-foreground">
         © {new Date().getFullYear()} Avynex AI. All rights reserved.
       </p>
+      <div className="flex items-center gap-4">
+        {socialLinks.map(({ label, href, icon: Icon }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Icon size={18} />
+          </a>
+        ))}
+      </div>
     </div>
   </footer>
 );
