@@ -20,10 +20,10 @@ export const navLinks = [
 ];
 
 export const trustStats = [
-  { value: "99.9%", label: "Uptime SLA", icon: Zap },
-  { value: "12+", label: "Languages Supported", icon: Languages },
-  { value: "50+", label: "Systems Deployed", icon: Server },
-  { value: "6+", label: "Industries Served", icon: Shield },
+  { value: "Islamabad, PK", label: "Registered Business Location", icon: Shield },
+  { value: "Direct Contact", label: "Phone, Email & WhatsApp", icon: Phone },
+  { value: "Real Support", label: "Human Customer Support", icon: MessageSquare },
+  { value: "Production-Ready", label: "Live Business Systems", icon: Server },
 ];
 
 export const services = [

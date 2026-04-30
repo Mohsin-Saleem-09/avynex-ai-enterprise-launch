@@ -12,11 +12,11 @@ const TrustSection = () => (
         className="text-center mb-12"
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Built for <span className="text-primary">real business operations</span>
+          A real business you can <span className="text-primary">verify and contact</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          We don't build demos — we ship production-grade AI systems that handle
-          thousands of interactions monthly across multiple industries.
+          Avynex AI operates as a registered technology company with a physical address,
+          direct contact channels, and real customer support — not an anonymous landing page.
         </p>
       </motion.div>
 

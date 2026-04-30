@@ -13,12 +13,11 @@ const WhySection = () => (
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Why Avynex AI</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          A premium AI partner for <span className="text-primary">serious businesses</span>
+          An AI partner built for <span className="text-primary">everyday business operations</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          This is not a basic chatbot agency or freelance service. Avynex AI builds
-          real production-level systems designed for business operations — reliable,
-          scalable, and built to deliver measurable results.
+          We focus on practical, production-ready systems designed to fit into how your
+          business already runs — reliable, well-documented, and supported by a real team.
         </p>
       </motion.div>
 

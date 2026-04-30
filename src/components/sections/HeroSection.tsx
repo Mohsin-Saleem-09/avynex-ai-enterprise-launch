@@ -25,12 +25,12 @@ const HeroSection = () => (
           AI-Powered Business Systems
         </p>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          AI agents that talk, think, and{" "}
-          <span className="text-primary">grow your business.</span>
+          AI automation systems for{" "}
+          <span className="text-primary">real businesses.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-          Automate customer calls, handle bookings, respond instantly, and
-          streamline operations with intelligent AI systems built for real businesses.
+          Avynex AI builds voice agents, chatbots, and workflow automation that
+          help businesses manage customer communication and daily operations more efficiently.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="gap-2">
