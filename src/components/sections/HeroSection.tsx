@@ -22,15 +22,18 @@ const HeroSection = () => (
         transition={{ duration: 0.7 }}
       >
         <p className="text-sm font-medium text-primary mb-4 tracking-wide uppercase">
-          AI-Powered Business Systems
+          AI Automation Company · Islamabad, Pakistan
         </p>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           AI automation systems for{" "}
           <span className="text-primary">real businesses.</span>
         </h1>
+        <p className="text-base font-medium text-foreground max-w-xl mb-3">
+          Avynex AI is an AI automation company based in Islamabad, Pakistan.
+        </p>
         <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
-          Avynex AI builds voice agents, chatbots, and workflow automation that
-          help businesses manage customer communication and daily operations more efficiently.
+          We build voice agents, chatbots, and workflow automation that help
+          businesses manage customer communication and daily operations more efficiently.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="gap-2">
