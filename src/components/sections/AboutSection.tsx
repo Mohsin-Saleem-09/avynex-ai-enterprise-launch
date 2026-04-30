@@ -4,21 +4,21 @@ import { Building2, Target, ShieldCheck } from "lucide-react";
 const pillars = [
   {
     icon: Building2,
-    title: "Built for Real Businesses",
+    title: "Based in Islamabad, Pakistan",
     description:
-      "We work with clinics, restaurants, agencies, and service companies to solve operational challenges with AI.",
+      "A registered technology company operating from NSTP NUST, Islamabad, with a clear business address and contact.",
   },
   {
     icon: Target,
-    title: "Practical, Not Experimental",
+    title: "Practical Business Focus",
     description:
-      "Every system we deploy targets a measurable outcome — reduced workload, faster response, more bookings.",
+      "We build automation systems that solve real operational problems for clinics, restaurants, agencies, and service companies.",
   },
   {
     icon: ShieldCheck,
-    title: "Reliable & Production-Ready",
+    title: "Production-Ready Systems",
     description:
-      "Our systems are designed to run in production with monitoring, documentation, and ongoing support.",
+      "Our solutions are built for daily business use with proper documentation, monitoring, and ongoing customer support.",
   },
 ];
 
@@ -35,17 +35,18 @@ const AboutSection = () => (
           About Avynex AI
         </p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          A technology company building{" "}
-          <span className="text-primary">practical AI systems</span>
+          A technology company based in{" "}
+          <span className="text-primary">Islamabad, Pakistan</span>
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Avynex AI is a technology company that builds AI-powered automation
-          systems for businesses. We help companies improve customer
-          communication, automate workflows, and reduce operational workload
-          using practical and reliable AI solutions.
+          Avynex AI is a technology company based in Islamabad, Pakistan. We build
+          AI-powered automation systems for businesses to improve customer
+          communication and operational efficiency.
         </p>
         <p className="text-muted-foreground leading-relaxed mt-4">
-          We focus on real-world business problems, not experimental tools.
+          We work with companies across healthcare, hospitality, and professional
+          services to deliver practical, reliable solutions that fit into their
+          existing workflows.
         </p>
       </motion.div>
 
