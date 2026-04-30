@@ -43,8 +43,8 @@ const Footer = () => (
         <h4 className="text-sm font-semibold mb-4 text-heading">Contact</h4>
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li>info@avynexai.com</li>
-          <li>+92 300 0000000</li>
-          <li>Islamabad, Pakistan</li>
+          <li>+92 304 9992471</li>
+          <li>NSTP NUST, Islamabad, Pakistan</li>
         </ul>
       </div>
     </div>
