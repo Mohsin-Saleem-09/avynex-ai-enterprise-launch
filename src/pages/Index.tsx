@@ -1,10 +1,10 @@
 import Navbar from "@/components/sections/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import TrustSection from "@/components/sections/TrustSection";
+import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import IntegrationSection from "@/components/sections/IntegrationSection";
+import ProcessSection from "@/components/sections/ProcessSection";
 import WhySection from "@/components/sections/WhySection";
-
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import PricingSection from "@/components/sections/PricingSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
@@ -16,10 +16,10 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <TrustSection />
+    <AboutSection />
     <ServicesSection />
-    <IntegrationSection />
+    <ProcessSection />
     <WhySection />
-    
     <ProjectsSection />
     <PricingSection />
     <TestimonialsSection />
