@@ -6,8 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@avynexai.com" },
-  { icon: Phone, label: "Phone / WhatsApp", value: "+92 300 0000000" },
-  { icon: MapPin, label: "Location", value: "Islamabad, Pakistan" },
+  { icon: Phone, label: "Phone / WhatsApp", value: "+92 304 9992471" },
+  { icon: MapPin, label: "Location", value: "NSTP NUST, Islamabad, Pakistan" },
 ];
 
 const ContactSection = () => (
