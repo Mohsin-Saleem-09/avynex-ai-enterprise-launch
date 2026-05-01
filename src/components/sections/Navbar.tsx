@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <span className="text-xl font-heading font-bold text-heading">
             Avynex <span className="text-primary">AI</span>
           </span>
@@ -29,8 +29,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <Button size="sm" className="hidden md:inline-flex">
-            Book a Demo
+          <Button size="sm" className="hidden md:inline-flex" asChild>
+            <a href="/#contact">Book a call</a>
           </Button>
           <button
             className="md:hidden text-foreground"
@@ -61,8 +61,10 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button size="sm" className="w-fit">
-                Book a Demo
+              <Button size="sm" className="w-fit" asChild>
+                <a href="/#contact" onClick={() => setMobileOpen(false)}>
+                  Book a call
+                </a>
               </Button>
             </div>
           </motion.div>

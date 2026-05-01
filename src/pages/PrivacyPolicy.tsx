@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 
-const PrivacyPolicy = () => (
+const PrivacyPolicy = () => {
+  useEffect(() => {
+    document.title = "Privacy Policy | Avynex AI";
+  }, []);
+
+  return (
   <main className="min-h-screen bg-background">
     <Navbar />
     <section className="section-padding pt-32">
@@ -28,15 +34,16 @@ const PrivacyPolicy = () => (
           <section>
             <h2 className="text-xl font-semibold text-heading mb-3">1. Information We Collect</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              When you contact us through our website, request a demo, or communicate with us via
-              WhatsApp, email, or phone, we may collect the following information:
+              When you contact us through our website, request information, or communicate with us via
+              WhatsApp, email, or phone, we may collect personal identifiers including your{" "}
+              <strong className="text-foreground">full name</strong>,{" "}
+              <strong className="text-foreground">email address</strong>, and{" "}
+              <strong className="text-foreground">phone number</strong>. We may also collect:
             </p>
             <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
-              <li>Full name</li>
-              <li>Email address</li>
-              <li>Phone number</li>
-              <li>Company name (if provided)</li>
+              <li>Company or organization name (if you provide it)</li>
               <li>Message content and project details you choose to share</li>
+              <li>Technical data such as IP address and browser type, where needed for security or analytics</li>
             </ul>
           </section>
 
@@ -153,6 +160,7 @@ const PrivacyPolicy = () => (
     </section>
     <Footer />
   </main>
-);
+  );
+};
 
 export default PrivacyPolicy;

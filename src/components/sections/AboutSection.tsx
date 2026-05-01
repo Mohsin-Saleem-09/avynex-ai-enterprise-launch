@@ -6,19 +6,19 @@ const pillars = [
     icon: Building2,
     title: "Based in Islamabad, Pakistan",
     description:
-      "A registered technology company operating from NSTP NUST, Islamabad, with a clear business address and contact.",
+      "We operate from NSTP NUST, Islamabad, with a clear business address and direct contact channels.",
   },
   {
     icon: Target,
-    title: "Practical Business Focus",
+    title: "Practical business focus",
     description:
-      "We build automation systems that solve real operational problems for clinics, restaurants, agencies, and service companies.",
+      "We design automation around real tasks: customer questions, bookings, reminders, and hand-offs to your team.",
   },
   {
     icon: ShieldCheck,
-    title: "Production-Ready Systems",
+    title: "Built for daily use",
     description:
-      "Our solutions are built for daily business use with proper documentation, monitoring, and ongoing customer support.",
+      "Documentation, monitoring, and support are part of how we deliver—not an afterthought.",
   },
 ];
 
@@ -31,22 +31,12 @@ const AboutSection = () => (
         viewport={{ once: true }}
         className="max-w-3xl mx-auto text-center mb-14"
       >
-        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">
-          About Avynex AI
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          A technology company based in{" "}
-          <span className="text-primary">Islamabad, Pakistan</span>
-        </h2>
-        <p className="text-muted-foreground leading-relaxed">
-          Avynex AI is a technology company based in Islamabad, Pakistan. We build
-          AI-powered automation systems for businesses to improve customer
-          communication and operational efficiency.
-        </p>
-        <p className="text-muted-foreground leading-relaxed mt-4">
-          We work with companies across healthcare, hospitality, and professional
-          services to deliver practical, reliable solutions that fit into their
-          existing workflows.
+        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">About Avynex AI</p>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-heading">Who we are</h2>
+        <p className="text-muted-foreground leading-relaxed text-base">
+          Avynex AI is a technology company focused on building practical AI solutions for businesses.
+          Our systems are designed to handle real-world business tasks such as customer support,
+          appointment booking, and workflow automation.
         </p>
       </motion.div>
 
@@ -64,9 +54,7 @@ const AboutSection = () => (
               <p.icon size={22} />
             </div>
             <h3 className="font-semibold text-heading mb-2">{p.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {p.description}
-            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
           </motion.div>
         ))}
       </div>

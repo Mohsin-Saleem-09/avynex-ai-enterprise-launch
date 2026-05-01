@@ -3,12 +3,13 @@ import {
   MessageSquare,
   HeartPulse,
   Cog,
-  Zap,
   Shield,
   Clock,
   Languages,
   Server,
   CheckCircle,
+  MapPin,
+  Users,
 } from "lucide-react";
 
 export const navLinks = [
@@ -20,10 +21,26 @@ export const navLinks = [
 ];
 
 export const trustStats = [
-  { value: "Islamabad, PK", label: "Registered Business Location", icon: Shield },
-  { value: "Direct Contact", label: "Phone, Email & WhatsApp", icon: Phone },
-  { value: "Real Support", label: "Human Customer Support", icon: MessageSquare },
-  { value: "Production-Ready", label: "Live Business Systems", icon: Server },
+  {
+    value: "Based in Islamabad, Pakistan",
+    label: "Registered presence at NSTP NUST with in-person contact options.",
+    icon: MapPin,
+  },
+  {
+    value: "Serving real businesses",
+    label: "Clinics, hospitality, agencies, and service companies—not demos for social feeds.",
+    icon: Users,
+  },
+  {
+    value: "Reliable AI systems",
+    label: "Design for uptime, clear fallbacks, and human escalation when automation should stop.",
+    icon: Shield,
+  },
+  {
+    value: "Production-ready solutions",
+    label: "Deployed workflows you can run daily, with monitoring and documented change paths.",
+    icon: Server,
+  },
 ];
 
 export const services = [
@@ -31,93 +48,93 @@ export const services = [
     icon: Phone,
     title: "AI Voice Agents",
     description:
-      "Never miss a call. Automatically answer, book appointments, and handle customer inquiries 24/7 — without hiring extra staff.",
+      "Answer calls, book appointments, and handle common questions—so your front desk is not the bottleneck.",
   },
   {
     icon: MessageSquare,
-    title: "Conversational AI",
+    title: "Conversational AI & WhatsApp",
     description:
-      "Respond instantly on website and WhatsApp, improving response time and customer experience while reducing manual workload.",
+      "Respond on your website and WhatsApp Business with trained, on-brand answers and structured hand-offs.",
   },
   {
     icon: HeartPulse,
     title: "Healthcare AI",
     description:
-      "Automate patient interactions, appointment booking, and follow-ups for clinics and hospitals — reducing wait times and no-shows.",
+      "Patient-facing flows for intake, scheduling, and reminders, aligned with how your clinic operates.",
   },
   {
     icon: Cog,
     title: "Automation Systems",
     description:
-      "Connect your workflows, CRM, scheduling, and operations into one intelligent system that runs without constant oversight.",
+      "Connect CRM, calendars, spreadsheets, and notifications so repeat work runs on a clear schedule.",
   },
 ];
 
 export const whyFeatures = [
-  { icon: Clock, title: "Real-time Performance", description: "Sub-second response times across all channels" },
-  { icon: Languages, title: "Multilingual Support", description: "12+ languages with native-quality output" },
-  { icon: Server, title: "Production-grade Systems", description: "Enterprise-ready infrastructure, not experiments" },
-  { icon: CheckCircle, title: "Reliable Delivery", description: "Tested, documented, deployed on schedule" },
+  { icon: Clock, title: "Responsive systems", description: "Built for the response times your customers expect on chat and voice" },
+  { icon: Languages, title: "Multilingual support", description: "Urdu, English, and additional languages where your audience needs them" },
+  { icon: Server, title: "Production-focused delivery", description: "Hosting, logging, and access control treated as part of the product" },
+  { icon: CheckCircle, title: "Clear acceptance criteria", description: "Test cases and sign-off before we call a milestone done" },
 ];
 
 export const whyBullets = [
-  "Voice, chat, and WhatsApp AI systems",
-  "Multilingual automation for global reach",
-  "Business-focused solutions, not experimental tools",
-  "Reliable, scalable architecture built to last",
-  "Smart booking and scheduling flows",
-  "Production-ready cloud deployment",
+  "Voice, chat, and WhatsApp automation in one engagement model",
+  "Workflows mapped to how your team already works",
+  "Documentation and training for staff who operate the system",
+  "Human escalation paths where automation should not guess",
+  "Incremental rollout options for higher-risk use cases",
+  "Support retainers available after go-live",
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Discovery & Strategy",
+    title: "Discovery & strategy",
     description:
-      "We understand your business, map your workflows, and define the AI use cases that will deliver the highest impact.",
+      "We map your channels, volumes, and compliance constraints, then agree on scope, languages, and integrations.",
   },
   {
     step: "02",
-    title: "Build & Integrate",
+    title: "Build & integrate",
     description:
-      "Our team develops and connects AI into your existing workflows — CRM, calendar, phone systems, and more.",
+      "We implement assistants and automations against that scope, with staging environments and test transcripts.",
   },
   {
     step: "03",
-    title: "Launch & Scale",
+    title: "Launch & operate",
     description:
-      "We deploy to production, monitor performance, and continuously improve as your business grows.",
+      "We deploy to production, train your team, and stay on retainer for tuning as traffic and offers change.",
   },
 ];
 
 export const projects = [
   {
-    category: "Voice AI",
-    title: "AI Calling Agent",
+    category: "Voice",
+    title: "Inbound call handling",
     description:
-      "Handles customer calls and bookings automatically — qualifying leads, scheduling appointments, and following up without human intervention.",
-    tags: ["Twilio", "OpenAI", "FastAPI", "WebSocket"],
+      "Example engagement: qualify intent, capture details, and create calendar holds or tickets in your stack.",
+    tags: ["Telephony", "Speech", "CRM hooks"],
   },
   {
-    category: "Healthcare AI",
-    title: "Healthcare AI Assistant",
+    category: "Healthcare",
+    title: "Clinic scheduling assistant",
     description:
-      "Patient interaction and appointment system that handles intake, answers FAQs, and routes patients to the right provider in real time.",
-    tags: ["LangChain", "React", "FHIR", "GPT-4"],
+      "Example engagement: collect reason for visit, propose slots, send confirmations, and remind patients before appointments.",
+    tags: ["WhatsApp", "SMS", "Calendar"],
   },
   {
-    category: "Voice AI",
-    title: "Multilingual Voice Bot",
+    category: "Messaging",
+    title: "WhatsApp Business routing",
     description:
-      "Handles multiple languages seamlessly for a global hospitality chain — managing reservations, inquiries, and upselling across regions.",
-    tags: ["Deepgram", "ElevenLabs", "Python", "Redis"],
+      "Example engagement: structured menus, agent takeover, and after-hours messaging with audit-friendly logs.",
+    tags: ["WhatsApp Cloud API", "Queues"],
   },
   {
     category: "Automation",
-    title: "Business Automation System",
+    title: "Operations connectors",
     description:
-      "End-to-end workflow automation connecting CRM, scheduling, and operations into one intelligent system that runs on autopilot.",
-    tags: ["n8n", "PostgreSQL", "Flask", "AWS"],
+      "Example engagement: sync leads, notify staff channels, and nightly reporting without manual copy-paste.",
+    tags: ["Webhooks", "Sheets", "Email"],
   },
 ];
 
@@ -166,30 +183,6 @@ export const pricingPlans = [
   },
 ];
 
-export const testimonials = [
-  {
-    name: "Dr. Sarah Ahmed",
-    role: "Chief Medical Officer, MedVista Clinics",
-    initials: "SA",
-    quote:
-      "Since implementing Avynex AI, our front desk handles 40% fewer calls while patient satisfaction has actually gone up. The system manages Urdu and English seamlessly — it's been a game changer for our operations.",
-  },
-  {
-    name: "Rahul Kapoor",
-    role: "Operations Director, TasteHub Restaurants",
-    initials: "RK",
-    quote:
-      "Our reservation system runs on autopilot now. The voice agent handles 200+ calls daily and the WhatsApp bot manages orders without a single missed message. We saved two full-time hires.",
-  },
-  {
-    name: "Fatima Zaidi",
-    role: "CEO, ScalePoint Solutions",
-    initials: "FZ",
-    quote:
-      "Avynex delivered a production-grade system on time, with proper documentation and support. It felt like working with an in-house AI team, not an outside vendor. Our clients have noticed the difference.",
-  },
-];
-
 export const footerServices = [
   "AI Voice Agents",
   "Conversational AI",
@@ -197,10 +190,8 @@ export const footerServices = [
   "Automation",
 ];
 
-export const footerCompany = [
-  { label: "About", href: "/#about" },
+export const footerQuickLinks = [
   { label: "Services", href: "/#services" },
-  { label: "Pricing", href: "/#pricing" },
   { label: "Contact", href: "/#contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
 ];

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/sections/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import TrustSection from "@/components/sections/TrustSection";
@@ -11,7 +12,14 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 
-const Index = () => (
+const DOC_TITLE = "Avynex AI | AI Automation & Chatbot Solutions";
+
+const Index = () => {
+  useEffect(() => {
+    document.title = DOC_TITLE;
+  }, []);
+
+  return (
   <main className="min-h-screen">
     <Navbar />
     <HeroSection />
@@ -26,6 +34,7 @@ const Index = () => (
     <ContactSection />
     <Footer />
   </main>
-);
+  );
+};
 
 export default Index;

@@ -10,13 +10,13 @@ const ProjectsSection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Use Cases</p>
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Real systems, <span className="text-primary">real results</span>
+        <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">Solution types</p>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-heading">
+          Examples of <span className="text-primary">what we build</span>
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          See how businesses use Avynex AI to automate operations,
-          improve customer experience, and scale without adding headcount.
+        <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          The cards below describe typical engagement shapes—not a guarantee of a specific third-party brand
+          deployment on our site. We scope each build with you before writing production integrations.
         </p>
       </motion.div>
 

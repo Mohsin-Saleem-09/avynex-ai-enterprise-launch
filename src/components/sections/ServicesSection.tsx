@@ -12,12 +12,12 @@ const ServicesSection = () => (
         className="text-center mb-14"
       >
         <p className="text-sm text-primary font-medium uppercase tracking-wide mb-3">What We Build</p>
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Intelligent systems for every channel
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-heading">
+          Automation across the channels you already use
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          From voice calls to WhatsApp, from patient intake to lead qualification —
-          we build AI that works where your business lives.
+        <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          Voice, WhatsApp, web chat, and internal workflows—implemented with your scripts, policies, and
+          escalation rules in mind.
         </p>
       </motion.div>
 
