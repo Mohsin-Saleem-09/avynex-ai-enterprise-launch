@@ -193,5 +193,5 @@ export const footerServices = [
 export const footerQuickLinks = [
   { label: "Services", href: "/#services" },
   { label: "Contact", href: "/#contact" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Privacy Policy", href: "/privacy" },
 ];

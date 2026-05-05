@@ -64,18 +64,16 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-xl font-semibold text-heading mb-3">3. We Do Not Sell Your Data</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Avynex AI does not sell, rent, or trade your personal information to third parties.
-              Your data is used only by our team to communicate with you and deliver our services.
+              Avynex AI does not sell, rent, trade, or share your personal information with third
+              parties for marketing or commercial resale.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-heading mb-3">4. Data Sharing</h2>
+            <h2 className="text-xl font-semibold text-heading mb-3">4. Data Usage Scope</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We may share your information only with trusted service providers (such as hosting,
-              email, or communication platforms like WhatsApp Business) that help us operate our
-              business. These providers are required to protect your information and use it only
-              for the purpose of supporting our services.
+              Your data is used only for communication and service improvement. We only disclose
+              data when required by applicable law or to protect legal rights.
             </p>
           </section>
 
